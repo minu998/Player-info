@@ -3,7 +3,7 @@ const INFO_API_URL = "https://sb-x-hacker-all-info.vercel.app/player-info";
 const BANNER_API_URL = "https://banner-api-rho.vercel.app/profile";
 
 // Developer Info
-const DEVELOPER = "@RIYAD_CODER";
+const DEVELOPER = "@SASI";
 
 // Icons for different sections
 const ICONS = {
