@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire UID Info - Player Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-fire"></i>
+                <h1>FREE FIRE UID INFO</h1>
+            </div>
+            <p class="tagline">Get complete player information instantly</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-card">
+                    <h2><i class="fas fa-search"></i> Enter Player UID</h2>
+                    <p>Enter the Free Fire UID to get complete player information</p>
+                    
+                    <div class="input-group">
+                        <input type="text" id="uidInput" placeholder="Enter UID (e.g., 9045365047)" maxlength="12">
+                        <button id="searchBtn" onclick="fetchPlayerInfo()">
+                            <i class="fas fa-search"></i> Get Info
+                        </button>
+                    </div>
+                    
+                    <div class="example">
+                        <span>Example: </span>
+                        <code onclick="setExample('9045365047')">9045365047</code>
+                        <code onclick="setExample('1234567890')">1234567890</code>
+                        <code onclick="setExample('9876543210')">9876543210</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Fetching player information...</p>
+            </div>
+
+            <!-- Player Info Display -->
+            <div id="playerInfo" class="player-info" style="display: none;">
+                <!-- Content will be filled by JavaScript -->
+            </div>
+
+            <!-- Banner Image -->
+            <div id="bannerContainer" class="banner-container" style="display: none;">
+                <!-- Banner will be displayed here -->
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <!-- Error will be displayed here -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p><i class="fas fa-crown"></i> Developer: @RIYAD_CODER</p>
+                <p><i class="fas fa-code"></i> Version 2.0</p>
+                <p><i class="fas fa-heart"></i> All data is fetched in real-time</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
